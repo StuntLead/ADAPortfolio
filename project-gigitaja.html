@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,186 +15,302 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <header class="bg-white/40 backdrop-blur-xl fixed top-0 left-0 right-0 z-50 border-b border-white/20">
+<body>
+
+    <header class="bg-glass fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <h2 class="text-xl font-bold">Fernando Darren Rachman</h2>
-                <nav>
-                    <a href="index.html" class="btn-secondary">← Back to Portfolio</a>
-                </nav>
+                <h2 class="text-xl font-bold tracking-tight adaptive-text">Fernando Darren Rachman</h2>
+                <div class="flex items-center gap-8">
+                    <nav class="hidden md:flex space-x-8 font-medium">
+                        <a href="index.html#about" class="nav-link transition-colors">About</a>
+                        <a href="index.html#projects" class="nav-link transition-colors">Projects</a>
+                        <a href="index.html#skills" class="nav-link transition-colors">Skills</a>
+                        <a href="index.html#contact" class="nav-link transition-colors">Contact</a>
+                    </nav>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="pt-24">
         <section class="container mx-auto px-6 py-12">
-            
+            <a href="index.html"
+                class="group inline-flex items-center px-5 py-2.5 text-sm font-medium text-black transition-all duration-300 bg-white/90 border border-gray-400 rounded-full shadow-sm hover:bg-white hover:shadow-md hover:border-gray-600 backdrop-blur-md dark:bg-white/10 dark:text-gray-100 dark:border-white/10 dark:hover:bg-white/20">
+                <svg class="w-4 h-4 mr-2 transform transition-transform group-hover:-translate-x-1" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Home
+            </a>
+
             <div class="text-center mb-12">
-                <span class="text-sm font-bold text-yellow-500 bg-yellow-100 px-3 py-1 rounded-full mb-4 inline-block">ONGOING PROJECT</span>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+                <span
+                    class="text-sm font-bold text-yellow-500 bg-yellow-100/10 border border-yellow-500/30 px-3 py-1 rounded-full mb-4 inline-block">
+                    ONGOING PROJECT
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gradient animate-on-scroll">
                     GigitAja: A Journey to Tackle Food Waste
                 </h1>
-                <p class="text-lg text-gray-600">
-                    An initiative to bridge surplus food with hungry stomachs through technology, inspired by a real-world problem.
+                <p class="text-lg adaptive-text-secondary animate-on-scroll" style="--animation-delay: 100ms;">
+                    An initiative to bridge surplus food with hungry stomachs through technology, inspired by a
+                    real-world problem.
                 </p>
             </div>
 
             <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-12 items-start">
 
-                <div class="lg:col-span-1 space-y-6 lg:sticky top-28">
-                    <div class="glass-effect p-5 rounded-xl flex items-start">
-                        <svg class="h-8 w-8 text-green-500 flex-shrink-0 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                <div class="lg:col-span-1 space-y-6 lg:sticky top-28 animate-on-scroll"
+                    style="--animation-delay: 200ms;">
+
+                    <div class="bg-card border border-gray-700 p-5 rounded-xl flex items-start">
+                        <svg class="h-8 w-8 text-green-500 flex-shrink-0 mr-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
                         <div>
-                            <h3 class="font-bold text-lg mb-1">My Role</h3>
-                            <p class="text-gray-700">Technical Co-Founder & Lead Prototyper</p>
-                        </div>
-                    </div>
-                    <div class="glass-effect p-5 rounded-xl flex items-start">
-                        <svg class="h-8 w-8 text-indigo-500 flex-shrink-0 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                        <div>
-                            <h3 class="font-bold text-lg mb-1">Project Team</h3>
-                            <p class="text-gray-700"><strong>Aisyah Raissa Algebra:</strong> Business & Vision</p>
-                        </div>
-                    </div>
-                    <div class="glass-effect p-5 rounded-xl flex items-start">
-                        <svg class="h-8 w-8 text-yellow-500 flex-shrink-0 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
-                        <div>
-                            <h3 class="font-bold text-lg mb-1">Technologies (Prototype)</h3>
-                            <p class="text-gray-700">HTML5, CSS3, JavaScript (ES6+), LocalStorage API</p>
+                            <h3 class="font-bold text-lg mb-1 adaptive-text">My Role</h3>
+                            <p class="adaptive-text-secondary">Technical Co-Founder & Lead Prototyper</p>
                         </div>
                     </div>
 
-                    <div class="glass-effect p-6 rounded-xl">
-                        <div class="flex items-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-purple-500 flex-shrink-0 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                            </svg>
-                            <h3 class="font-semibold text-lg">Key Skills Acquired</h3>
+                    <div class="bg-card border border-gray-700 p-5 rounded-xl flex items-start">
+                        <svg class="h-8 w-8 text-indigo-500 flex-shrink-0 mr-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1 adaptive-text">Project Team</h3>
+                            <p class="adaptive-text-secondary"><strong>Aisyah Raissa Algebra:</strong> Business & Vision
+                            </p>
                         </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                    </div>
+
+                    <div class="bg-card border border-gray-700 p-5 rounded-xl flex items-start">
+                        <svg class="h-8 w-8 text-yellow-500 flex-shrink-0 mr-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1 adaptive-text">Technologies (Prototype)</h3>
+                            <p class="adaptive-text-secondary">HTML5, CSS3, JavaScript (ES6+), LocalStorage API</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-card border border-gray-700 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-purple-500 flex-shrink-0 mr-3"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                            <h3 class="font-semibold text-lg adaptive-text">Key Skills Acquired</h3>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
                             <div>
-                                <h4 class="font-medium text-gray-800 mb-2">Technical</h4>
-                                <ul class="space-y-2 pl-1">
-                                    <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Rapid Prototyping</li>
-                                    <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Responsive (Mobile-First) Design</li>
-                                    <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>UI/UX Implementation</li>
+                                <h4 class="font-medium adaptive-text mb-2">Technical</h4>
+                                <ul class="space-y-2 pl-1 adaptive-text-secondary text-sm">
+                                    <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" /></svg>Rapid Prototyping</li>
+                                    <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" /></svg>Mobile-First Design</li>
+                                    <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" /></svg>UI/UX Implementation</li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 class="font-medium text-gray-800 mb-2">Interpersonal & Design</h4>
-                                <ul class="space-y-2 pl-1">
-                                    <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Cross-Discipline Collaboration</li>
-                                    <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Iterative Development</li>
-                                    <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Business to Tech Translation</li>
+                                <h4 class="font-medium adaptive-text mb-2">Interpersonal</h4>
+                                <ul class="space-y-2 pl-1 adaptive-text-secondary text-sm">
+                                    <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" /></svg>Cross-Discipline Collaboration</li>
+                                    <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" /></svg>Iterative Development</li>
+                                    <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" /></svg>Business to Tech Translation</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-2 space-y-12">
-                    
+                <div class="lg:col-span-2 space-y-12 animate-on-scroll" style="--animation-delay: 300ms;">
+
+                    <!-- Phase 00 -->
                     <div class="flex">
                         <div class="flex flex-col items-center mr-6">
-                            <div class="w-10 h-10 bg-gray-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">00</div>
-                            <div class="w-px h-full bg-gray-300"></div>
+                            <div
+                                class="w-10 h-10 bg-gray-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                                00</div>
+                            <div class="w-px h-full bg-gray-300 dark:bg-gray-700"></div>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold mb-3">Phase 00: Background - A Problem Worth Solving</h2>
-                            <p class="text-gray-600 mb-4">Every great initiative is born from a pressing problem. For GigitAja, that problem is food waste. Indonesia faces a heartbreaking paradox: as one of the world's largest producers of food waste, we discard over <strong>20 million tons</strong> of food annually. </p>
-                            <p class="text-gray-600 mb-4">This wasted food doesn't just disappear; it piles up in landfills, releasing methane gas — a greenhouse gas dozens of times more potent than carbon dioxide and accelerating climate change. At the same time, millions of our fellow citizens still struggle with hunger.</p>
-                            <div class="bg-white/60 p-5 rounded-2xl border border-white/50 shadow-sm mt-4">
-                                <h4 class="font-bold text-md mb-4 text-center">Answering the Call of the Sustainable Development Goals (SDGs)</h4>
+                            <h2 class="text-2xl font-bold mb-3 adaptive-text">Phase 00: Background - A Problem Worth
+                                Solving</h2>
+                            <p class="adaptive-text-secondary mb-4">Every great initiative is born from a pressing
+                                problem. For GigitAja, that problem is food waste. Indonesia faces a heartbreaking
+                                paradox: as one of the world's largest producers of food waste, we discard over
+                                <strong>20 million tons</strong> of food annually.</p>
+                            <p class="adaptive-text-secondary mb-4">This wasted food doesn't just disappear; it piles up
+                                in landfills, releasing methane gas. At the same time, millions of our fellow citizens
+                                still struggle with hunger.</p>
+
+                            <div class="bg-card border border-gray-700 p-5 rounded-2xl shadow-sm mt-4">
+                                <h4 class="font-bold text-md mb-4 text-center adaptive-text">Answering the Call of the
+                                    Sustainable Development Goals (SDGs)</h4>
                                 <div class="grid grid-cols-3 gap-4 text-center">
                                     <div>
-                                        <img src="assets/images/sdg12.png" alt="SDG 12 Icon" class="mx-auto mb-2 rounded-lg">
-                                        <p class="text-xs text-gray-600"><strong>SDG 12:</strong> Responsible Consumption & Production</p>
+                                        <img src="assets/images/sdg12.png" alt="SDG 12"
+                                            class="mx-auto mb-2 rounded-lg h-16 w-16 object-contain bg-white p-1">
+                                        <p class="text-xs adaptive-text-secondary"><strong>SDG 12:</strong> Responsible
+                                            Consumption</p>
                                     </div>
                                     <div>
-                                        <img src="assets/images/sdg2.png" alt="SDG 2 Icon" class="mx-auto mb-2 rounded-lg">
-                                        <p class="text-xs text-gray-600"><strong>SDG 2:</strong> Zero Hunger</p>
+                                        <img src="assets/images/sdg2.png" alt="SDG 2"
+                                            class="mx-auto mb-2 rounded-lg h-16 w-16 object-contain bg-white p-1">
+                                        <p class="text-xs adaptive-text-secondary"><strong>SDG 2:</strong> Zero Hunger
+                                        </p>
                                     </div>
                                     <div>
-                                        <img src="assets/images/sdg13.webp" alt="SDG 13 Icon" class="mx-auto mb-2 rounded-lg">
-                                        <p class="text-xs text-gray-600"><strong>SDG 13:</strong> Climate Action</p>
+                                        <img src="assets/images/sdg13.webp" alt="SDG 13"
+                                            class="mx-auto mb-2 rounded-lg h-16 w-16 object-contain bg-white p-1">
+                                        <p class="text-xs adaptive-text-secondary"><strong>SDG 13:</strong> Climate
+                                            Action</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Phase 01 -->
                     <div class="flex">
                         <div class="flex flex-col items-center mr-6">
-                            <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">01</div>
-                            <div class="w-px h-full bg-gray-300"></div>
+                            <div
+                                class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                                01</div>
+                            <div class="w-px h-full bg-gray-300 dark:bg-gray-700"></div>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold mb-3">Phase 01: Project Initiation - From Idea to Action</h2>
-                            <p class="text-gray-600 mb-4">Stemming from this urgency, the story of GigitAja began.</p>
-                            <p class="text-gray-600 mb-4">As a Digital Business Innovation student, my partner, <strong>Aisyah Raissa Algebra</strong>, identified a business opportunity rooted in a solution. Inspired by the success of global platforms like "Too Good To Go," she saw a significant gap in the Indonesian market. Aisyah brought the "why" (the reason to act) and the "what" (the business vision).</p>
-                            <p class="text-gray-600 mb-4">As a Computer Science student, I was inspired to take on the technical role — to build the "how." Our collaboration formed the perfect synergy between business innovation and technical execution. GigitAja's mission is simple: to be the bridge between delicious surplus food and hungry stomachs, saving meals from the bin in a way that is fun, easy, and affordable for our generation (Gen-Z).</p>
+                            <h2 class="text-2xl font-bold mb-3 adaptive-text">Phase 01: Project Initiation</h2>
+                            <p class="adaptive-text-secondary mb-4">Stemming from this urgency, the story of GigitAja
+                                began.</p>
+                            <p class="adaptive-text-secondary mb-4">As a Digital Business Innovation student, my
+                                partner, <strong>Aisyah Raissa Algebra</strong>, identified a business opportunity
+                                rooted in a solution. Inspired by platforms like "Too Good To Go," she saw a significant
+                                gap in the Indonesian market.</p>
+                            <p class="adaptive-text-secondary mb-4">As a Computer Science student, I was inspired to
+                                take on the technical role — to build the "how." GigitAja's mission is simple: to be the
+                                bridge between delicious surplus food and hungry stomachs.</p>
                         </div>
                     </div>
 
+                    <!-- Phase 02 -->
                     <div class="flex">
                         <div class="flex flex-col items-center mr-6">
-                            <div class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">02</div>
-                            <div class="w-px h-full bg-gray-300"></div>
+                            <div
+                                class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                                02</div>
+                            <div class="w-px h-full bg-gray-300 dark:bg-gray-700"></div>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold mb-3">Phase 02: The Blueprint - Design & Prototyping</h2>
-                            <p class="text-gray-600 mb-4">The challenge was to craft an experience that was not only functional but also engaging and relatable for Gen-Z. I chose a vibrant, modern UI with bold typography and a casual tone ("Food Hero!") to make saving food feel like a cool achievement.</p>
-                            <p class="text-gray-600 mb-4">This design adopts the principles of <strong>Clarity, Deference, and Depth</strong>, aligning with Apple's design philosophy. For rapid prototyping, I strategically used vanilla HTML, CSS, and JavaScript. This allowed for quick iterations and testing. A key moment was overcoming a browser security issue with local map tiles by researching and implementing a more robust  solution from OpenStreetMap. This pivot demonstrated my ability not just to code, but to <strong>diagnose, research, and implement reliable solutions</strong> under constraints.</p>
+                            <h2 class="text-2xl font-bold mb-3 adaptive-text">Phase 02: The Blueprint - Design &
+                                Prototyping</h2>
+                            <p class="adaptive-text-secondary mb-4">The challenge was to craft an experience that was
+                                not only functional but also engaging for Gen-Z. I chose a vibrant, modern UI with bold
+                                typography and a casual tone.</p>
+                            <p class="adaptive-text-secondary mb-4">This design adopts the principles of
+                                <strong>Clarity, Deference, and Depth</strong>. For rapid prototyping, I strategically
+                                used vanilla HTML, CSS, and JavaScript. A key moment was overcoming a browser security
+                                issue with local map tiles by implementing a solution from OpenStreetMap.</p>
                         </div>
                     </div>
-                    
+
+                    <!-- Phase 03 -->
                     <div class="flex">
                         <div class="flex flex-col items-center mr-6">
-                            <div class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">03</div>
-                            <div class="w-px h-full bg-gray-300"></div>
+                            <div
+                                class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                                03</div>
+                            <div class="w-px h-full bg-gray-300 dark:bg-gray-700"></div>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold mb-3">Phase 03: The Tangible Result - Functional Prototype</h2>
-                            <p class="text-gray-600 mb-6">The result is not just a static image; it's a <strong>high-fidelity, fully interactive prototype</strong> that simulates the end-to-end user journey. Using `localStorage`, I single-handedly built a functional proof-of-concept demonstrating dynamic discovery, a complete simulated purchase flow, and order management. This proves the concept's viability before any backend development and includes a utility "Clear History" feature for easy testing and re-demonstration.</p>
-                            <a href="https://stuntlead.github.io/GigitAjaPrototype/index.html" target="_blank" class="inline-flex items-center justify-center p-4 rounded-xl text-center font-bold text-white bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-lg transform hover:scale-105">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            <h2 class="text-2xl font-bold mb-3 adaptive-text">Phase 03: The Tangible Result</h2>
+                            <p class="adaptive-text-secondary mb-6">The result is a <strong>high-fidelity, fully
+                                    interactive prototype</strong> that simulates the end-to-end user journey. Using
+                                `localStorage`, I single-handedly built a functional proof-of-concept demonstrating
+                                dynamic discovery, a complete simulated purchase flow, and order management.</p>
+
+                            <a href="https://stuntlead.github.io/GigitAjaPrototype/index.html" target="_blank"
+                                class="inline-flex items-center justify-center p-4 rounded-xl text-center font-bold text-white bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-lg transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
                                 View Live Prototype
                             </a>
                         </div>
                     </div>
 
+                    <!-- Phase 04 -->
                     <div class="flex">
                         <div class="flex flex-col items-center mr-6">
-                            <div class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">04</div>
+                            <div
+                                class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                                04</div>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold mb-3">Phase 04: The Horizon - Future Vision</h2>
-                            <p class="text-gray-600 mb-4">This prototype is merely the launching pad. The vision for GigitAja is to evolve into a <strong>native iOS application</strong> that sets a new standard for social impact apps in Indonesia. The roadmap includes gamification, a merchant dashboard, and deep integration with Apple's ecosystem.</p>
-                            <div class="bg-blue-50/70 p-6 rounded-2xl border border-blue-200/50 shadow-sm mt-4">
-                                <h4 class="font-bold text-md mb-3 text-blue-900">Native iOS Roadmap</h4>
-                                <ul class="space-y-2 text-sm">
-                                    <li><strong class="text-blue-700">Gamification & Social Sharing:</strong> Develop a badge system ("10 Meals Saved" hero) and social sharing features.</li>
-                                    <li><strong class="text-blue-700">Merchant Dashboard:</strong> Create a simple platform for partners to upload offers and track their impact.</li>
-                                    <li><strong class="text-blue-700">Native iOS App:</strong> Implement with SwiftUI for a beautiful interface, Apple Pay for seamless payments, and MapKit & Haptics for satisfying interactions.</li>
+                            <h2 class="text-2xl font-bold mb-3 adaptive-text">Phase 04: The Horizon - Future Vision</h2>
+                            <p class="adaptive-text-secondary mb-4">This prototype is merely the launching pad. The
+                                vision for GigitAja is to evolve into a <strong>native iOS application</strong> that
+                                sets a new standard for social impact apps in Indonesia.</p>
+
+                            <div class="bg-card border border-gray-700 p-6 rounded-2xl shadow-sm mt-4">
+                                <h4 class="font-bold text-md mb-3 adaptive-text text-blue-500">Native iOS Roadmap</h4>
+                                <ul class="space-y-2 text-sm adaptive-text-secondary">
+                                    <li><strong class="text-blue-500">Gamification:</strong> Badge system and social
+                                        sharing.</li>
+                                    <li><strong class="text-blue-500">Merchant Dashboard:</strong> Platform for
+                                        partners.</li>
+                                    <li><strong class="text-blue-500">Native iOS App:</strong> SwiftUI, Apple Pay,
+                                        MapKit & Haptics.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-white/50 border-t border-gray-200/50 mt-16">
-        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
-            <p>&copy; 2025 Fernando Darren Rachman. Crafted with a passion for learning.</p>
+    <footer class="bg-glass mt-auto border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center adaptive-text-secondary">
+            <p>&copy; 2025 Fernando Darren Rachman.</p>
         </div>
     </footer>
 
-</body>
-</html>
+    <script src="assets/js/main.js"></script>
 
+</body>
+
+</html>

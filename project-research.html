@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,148 +10,182 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-    <header class="bg-white/40 backdrop-blur-xl fixed top-0 left-0 right-0 z-10 border-b border-white/20">
+<body>
+
+    <header class="bg-glass fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <h2 class="text-xl font-bold">Fernando Darren Rachman</h2>
-                <nav>
-                    <a href="index.html" class="btn-secondary">← Back to Portfolio</a>
-                </nav>
+                <h2 class="text-xl font-bold tracking-tight adaptive-text">Fernando Darren Rachman</h2>
+                <div class="flex items-center gap-8">
+                    <nav class="hidden md:flex space-x-8 font-medium">
+                        <a href="index.html#about" class="nav-link transition-colors">About</a>
+                        <a href="index.html#projects" class="nav-link transition-colors">Projects</a>
+                        <a href="index.html#skills" class="nav-link transition-colors">Skills</a>
+                        <a href="index.html#contact" class="nav-link transition-colors">Contact</a>
+                    </nav>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="pt-24">
         <section class="container mx-auto px-6 py-12">
-            
+            <a href="index.html"
+                class="group inline-flex items-center px-5 py-2.5 text-sm font-medium text-black transition-all duration-300 bg-white/90 border border-gray-400 rounded-full shadow-sm hover:bg-white hover:shadow-md hover:border-gray-600 backdrop-blur-md dark:bg-white/10 dark:text-gray-100 dark:border-white/10 dark:hover:bg-white/20">
+                <svg class="w-4 h-4 mr-2 transform transition-transform group-hover:-translate-x-1" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Home
+            </a>
+
             <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gradient animate-on-scroll">
                     Hybrid Ensemble Model for Stock Price Forecasting
                 </h1>
-                <p class="text-lg text-gray-600">
-                    Accepted paper at The 10th International Conference on Computer Science and Computational Intelligence (ICCSCI) 2025.
+                <p class="text-lg adaptive-text-secondary animate-on-scroll" style="--animation-delay: 100ms;">
+                    Published in <strong>Procedia Computer Science (Elsevier)</strong>, Volume 269, 2025, Pages 901-910.
                 </p>
             </div>
 
             <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
 
-                <div class="space-y-8 lg:sticky top-28">
-                    <div class="rounded-xl overflow-hidden shadow-2xl glass-effect p-2">
-                         <iframe class="w-full h-80 md:h-96 rounded-lg" src="https://www.youtube.com/embed/s-wL6aDFVEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="space-y-8 lg:sticky top-28 animate-on-scroll" style="--animation-delay: 200ms;">
+                    <div class="rounded-xl overflow-hidden shadow-2xl bg-card border border-gray-700 p-2">
+                        <iframe class="w-full h-64 md:h-80 rounded-lg" src="https://www.youtube.com/embed/s-wL6aDFVEQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <div class="rounded-xl overflow-hidden shadow-2xl glass-effect p-2">
-                        <img src="assets/images/presentation-photo.jpg"
-                             alt="A photo of me presenting at the ICCSCI 2025 conference"
-                             onerror="this.onerror=null;this.src='https://placehold.co/800x500/EFEFEF/333333?text=Photo+of+Me+Presenting';"
-                             class="w-full h-auto object-cover rounded-lg">
+
+
+                    <div class="rounded-xl overflow-hidden shadow-2xl bg-card border border-gray-700 p-2">
+                        <img src="assets/images/presentation-photo.jpg" alt="Conference Presentation"
+                            onerror="this.onerror=null;this.src='https://placehold.co/800x500/1e293b/ffffff?text=Conference+Presentation';"
+                            class="w-full h-auto object-cover rounded-lg">
                     </div>
                 </div>
 
-                <div class="space-y-8">
-                     <div class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                             <div class="glass-effect p-4 rounded-xl flex items-center space-x-3">
-                                <svg class="h-7 w-7 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                                <div>
-                                    <h3 class="font-semibold text-md">Project Type</h3>
-                                    <p class="text-gray-600 text-sm">Group Project (Research)</p>
-                                </div>
-                            </div>
-                            <div class="glass-effect p-4 rounded-xl flex items-center space-x-3">
-                                <svg class="h-7 w-7 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                                <div>
-                                    <h3 class="font-semibold text-md">My Role</h3>
-                                    <p class="text-gray-600 text-sm">Core Researcher & Methodology Strategist</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="glass-effect p-4 rounded-xl flex items-center space-x-3">
-                            <svg class="h-7 w-7 text-yellow-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                <div class="space-y-8 animate-on-scroll" style="--animation-delay: 300ms;">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-card border border-gray-700 p-4 rounded-xl flex items-center space-x-3">
+                            <svg class="h-7 w-7 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
                             <div>
-                                <h3 class="font-semibold text-md">Technologies</h3>
-                                <p class="text-gray-600 text-sm">Python, Scikit-learn, TensorFlow/Keras</p>
+                                <h3 class="font-semibold text-md adaptive-text">Project Type</h3>
+                                <p class="adaptive-text-secondary text-sm">Group Project (Research)</p>
                             </div>
                         </div>
-
-                         <div class="glass-effect p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <svg class="h-7 w-7 text-indigo-500 flex-shrink-0 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                                <h3 class="font-semibold text-lg">Research Team</h3>
-                            </div>
-                            <ul class="space-y-2 text-sm text-gray-700 list-none pl-0">
-                                <li><strong>Wisnutomo Adji Nugroho:</strong> Lead Author & Model Development</li>
-                                <li><strong>Brainardo Kenneth Siahu:</strong> Methodology & Dataset Acquisition</li>
-                                <li><strong>Irene A. Iswanto & Setiawan Joddy:</strong> Academic Advisors</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="glass-effect p-6 rounded-xl">
-                            <div class="flex items-center mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-purple-500 flex-shrink-0 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                                </svg>
-                                <h3 class="font-semibold text-lg">Key Skills Acquired</h3>
-                            </div>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
-                                <div>
-                                    <h4 class="font-medium text-gray-800 mb-2">Technical</h4>
-                                    <ul class="space-y-2 pl-1">
-                                        <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Machine Learning</li>
-                                        <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Ensemble Models</li>
-                                        <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Data Analysis</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-800 mb-2">Interpersonal</h4>
-                                    <ul class="space-y-2 pl-1">
-                                        <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Academic Writing</li>
-                                        <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Collaborative Research</li>
-                                        <li class="flex items-center text-sm text-gray-700"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Critical Thinking</li>
-                                    </ul>
-                                </div>
+                        <div class="bg-card border border-gray-700 p-4 rounded-xl flex items-center space-x-3">
+                            <svg class="h-7 w-7 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                            <div>
+                                <h3 class="font-semibold text-md adaptive-text">My Role</h3>
+                                <p class="adaptive-text-secondary text-sm">Core Researcher & Methodology Strategist</p>
                             </div>
                         </div>
-
-                        <a href="https://www.canva.com/design/DAGqe7WnAVI/DS_OhYuEilvo6v4C2jpQRg/view?utm_content=DAGqe7WnAVI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h12c3d2bdad" target="_blank" class="block w-full text-center p-4 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg transform hover:scale-105">
-                            View Presentation
-                        </a>
-
                     </div>
-                    
-                    <div class="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-md border border-white/30">
-                        <div class="mb-6">
-                            <h2 class="text-2xl font-bold mb-2">Project Summary</h2>
-                            <p class="text-gray-700">We developed a sophisticated hybrid model combining ARIMA, Random Forest, and LSTM, enhanced with a meta-learner, to forecast stock prices with superior accuracy. This work was accepted into the <strong>ICCSCI 2025</strong> and is under publication by <strong>Elsevier</strong>.</p>
-                        </div>
-                        <div class="mb-6">
-                            <h2 class="text-2xl font-bold mb-2">My Impact & Presentation</h2>
-                             <p class="text-gray-700">My role was to establish the <strong>foundational research and methodological strategy</strong> that guided our model's development. By synthesizing complex literature, I helped define the architectural approach that ultimately led to our high-accuracy results. I also had the honor of <strong>presenting our findings at the conference</strong>, an invaluable experience in communicating technical concepts and engaging with experts.</p>
-                        </div>
+
+                    <div class="bg-card border border-gray-700 p-4 rounded-xl flex items-center space-x-3">
+                        <svg class="h-7 w-7 text-yellow-500 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                         <div>
-                            <h2 class="text-2xl font-bold mb-2">What I Learned</h2>
-                            <p class="text-gray-700">This project instilled a drive for excellence through <strong>relentless perseverance</strong>, proving that innovation emerges from pushing through complex academic and technical challenges. This blend of technical tenacity, collaborative spirit, and a commitment to delivering impactful results has prepared me to thrive in the creative, fast-paced environment of the Apple Developer Academy.</p>
+                            <h3 class="font-semibold text-md adaptive-text">Technologies</h3>
+                            <p class="adaptive-text-secondary text-sm">Python, Scikit-learn, TensorFlow/Keras</p>
                         </div>
                     </div>
+
+                    <div class="bg-card border border-gray-700 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <svg class="h-7 w-7 text-indigo-500 flex-shrink-0 mr-3" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <h3 class="font-semibold text-lg adaptive-text">Research Team</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm adaptive-text-secondary list-none pl-0">
+                            <li><strong>Wisnutomo Adji Nugroho:</strong> Lead Author & Model Development</li>
+                            <li><strong>Fernando Darren Rachman:</strong> Methodology Strategist & Core Researcher</li>
+                            <li><strong>Brainardo Kenneth Siahu:</strong> Methodology & Dataset Acquisition</li>
+                            <li><strong>Irene A. Iswanto & Setiawan Joddy:</strong> Academic Advisors</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-card border border-gray-700 p-6 rounded-xl text-center">
+                        <h3 class="font-bold text-lg adaptive-text mb-4">Read the Full Paper</h3>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S1877050925026948" target="_blank"
+                            class="btn-primary w-full flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                </path>
+                            </svg>
+                            View on ScienceDirect
+                        </a>
+                        <p class="text-sm adaptive-text-secondary mt-3 font-mono">DOI: 10.1016/j.procs.2025.09.033</p>
+                    </div>
+
+                    <div class="bg-card border border-gray-700 p-6 rounded-xl">
+                        <h2 class="text-2xl font-bold mb-4 adaptive-text">Project Overview</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-semibold text-lg adaptive-text mb-2">Summary</h3>
+                                <p class="adaptive-text-secondary leading-relaxed">
+                                    We developed a sophisticated hybrid model combining <strong>ARIMA, Random Forest,
+                                        and LSTM</strong>, enhanced with a meta-learner, to forecast stock prices with
+                                    superior accuracy. This work addresses the volatility of financial markets by
+                                    leveraging the strengths of both statistical and deep learning approaches.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg adaptive-text mb-2">My Contribution</h3>
+                                <p class="adaptive-text-secondary leading-relaxed">
+                                    My role was to establish the <strong>foundational research and methodological
+                                        strategy</strong> that guided our model's development. By synthesizing complex
+                                    literature, I helped define the architectural approach that ultimately led to our
+                                    high-accuracy results. I also had the honor of <strong>presenting our findings at
+                                        the conference</strong>.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg adaptive-text mb-2">What I Learned</h3>
+                                <p class="adaptive-text-secondary leading-relaxed">
+                                    This project instilled a drive for excellence through <strong>relentless
+                                        perseverance</strong>, proving that innovation emerges from pushing through
+                                    complex academic and technical challenges. This blend of technical tenacity and
+                                    collaborative spirit has prepared me to thrive in rigorous engineering environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-white/50 border-t border-gray-200/50 mt-16">
-        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
-            <p>&copy; 2025 Fernando Darren Rachman. Crafted with a passion for learning.</p>
+    <footer class="bg-glass mt-auto border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center adaptive-text-secondary">
+            <p>&copy; 2025 Fernando Darren Rachman.</p>
         </div>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>

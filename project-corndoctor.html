@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Detail - DANAin Crowdfunding Platform</title>
+    <title>Project Detail - Corn Doctor AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
@@ -34,7 +34,11 @@
         </div>
     </header>
 
+
+
     <main class="pt-24">
+
+
         <section class="container mx-auto px-6 py-12">
 
             <a href="index.html"
@@ -48,11 +52,17 @@
             </a>
 
             <div class="text-center mb-12">
+                <span
+                    class="text-sm font-bold text-green-600 bg-green-100/10 border border-green-500/30 px-3 py-1 rounded-full mb-4 inline-block">
+                    COMPUTER VISION & AGRICULTURE
+                </span>
+
                 <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gradient animate-on-scroll">
-                    DANAin - Hybrid Crowdfunding Platform
+                    Corn Disease Doctor
                 </h1>
                 <p class="text-lg adaptive-text-secondary animate-on-scroll" style="--animation-delay: 100ms;">
-                    A full-stack web application prototype for a Software Engineering course project.
+                    A high-performance AI diagnostic tool utilizing YOLOv8 to detect corn leaf diseases with 96.7%
+                    accuracy.
                 </p>
             </div>
 
@@ -60,29 +70,35 @@
 
                 <div class="space-y-8 lg:sticky top-28 animate-on-scroll" style="--animation-delay: 200ms;">
 
-                    <div id="carousel-wrapper"
-                        class="rounded-xl overflow-hidden shadow-2xl bg-card border border-gray-700 p-2 aspect-video relative">
-                    </div>
-
                     <div class="rounded-xl overflow-hidden shadow-2xl bg-card border border-gray-700 p-2">
-                        <iframe class="w-full h-auto aspect-video object-cover rounded-lg"
-                            src="https://drive.google.com/file/d/1VOHOaEzvxKzu3KDVQYbw7daBOvx6JYp3/preview" width="100%"
-                            height="100%" allow="autoplay" frameborder="0">
-                        </iframe>
+                        <img src="assets/images/corndoctor-photo.png"
+                            alt="Corn Doctor Streamlit Interface showing disease detection"
+                            onerror="this.onerror=null;this.src='https://placehold.co/1200x800/27ae60/FFFFFF?text=Corn+Doctor+App+Interface';"
+                            class="w-full h-auto object-cover rounded-lg">
                     </div>
 
                     <div class="bg-card border border-gray-700 p-6 rounded-xl text-center">
-                        <h3 class="font-bold text-lg adaptive-text mb-4">Explore the Code</h3>
-                        <a href="https://github.com/Felix-Panjaitan/DanaIn" target="_blank"
-                            class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors w-full">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd" /></svg>
-                            View on GitHub
-                        </a>
-                        <p class="text-sm adaptive-text-secondary mt-3">Check out the repository for full source code.
-                        </p>
+                        <h3 class="font-bold text-lg adaptive-text mb-4">Try the Diagnosis</h3>
+
+                        <div class="flex flex-col gap-3">
+                            <a href="https://cornleafdiseasesems5.streamlit.app/" target="_blank"
+                                class="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white rounded-lg font-bold transition-all shadow-lg hover:shadow-green-500/25 transform hover:-translate-y-0.5">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Launch Diagnosis App
+                            </a>
+
+                            <a href="https://github.com/StuntLead/corn_leaf_disease_sems5" target="_blank"
+                                class="flex items-center justify-center px-4 py-2.5 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-lg font-medium transition-colors border border-gray-300 dark:border-gray-600">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                        clip-rule="evenodd" /></svg>
+                                View on GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -97,7 +113,9 @@
                             </svg>
                             <div>
                                 <h3 class="font-semibold text-md adaptive-text">Project Type</h3>
-                                <p class="adaptive-text-secondary text-sm">Group Project (SE)</p>
+                                <p class="adaptive-text-secondary text-sm">
+                                    Group Project
+                                </p>
                             </div>
                         </div>
                         <div class="bg-card border border-gray-700 p-4 rounded-xl flex items-center space-x-3">
@@ -107,7 +125,9 @@
                                     d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
                             <div>
                                 <h3 class="font-semibold text-md adaptive-text">My Role</h3>
-                                <p class="adaptive-text-secondary text-sm">Lead Frontend Developer, UX Researcher</p>
+                                <p class="adaptive-text-secondary text-sm">
+                                    AI Engineer & Model Developer
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -119,7 +139,9 @@
                                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                         <div>
                             <h3 class="font-semibold text-md adaptive-text">Technologies</h3>
-                            <p class="adaptive-text-secondary text-sm">HTML5, CSS3, Tailwind CSS, JS (ES6+)</p>
+                            <p class="adaptive-text-secondary text-sm leading-relaxed">
+                                YOLOv8 (Ultralytics), Python, PyTorch, Streamlit, Pandas, NumPy
+                            </p>
                         </div>
                     </div>
 
@@ -130,13 +152,12 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                             </svg>
-                            <h3 class="font-semibold text-lg adaptive-text">Research Team</h3>
+                            <h3 class="font-semibold text-lg adaptive-text">Project Team</h3>
                         </div>
                         <ul class="space-y-2 text-sm adaptive-text-secondary list-none pl-0">
-                            <li><strong>Christian Felix Panjaitan:</strong> Team Lead & Backend Developer</li>
-                            <li><strong>Brainardo Kenneth Siahu:</strong> Concept & Business Logic</li>
-                            <li><strong>Putri Rizkia P. Alifuddin:</strong> UI/UX Design & Documentation</li>
-                            <li><strong>Velicia Nissy Lonteng:</strong> UI/UX Design & User Research</li>
+                            <li><strong>Fernando Darren Rachman:</strong> AI Model Fine-Tuning & Streamlit Integration
+                            </li>
+                            <li><strong>Rizal:</strong> Dataset Preparation & Model Research</li>
                         </ul>
                     </div>
 
@@ -154,21 +175,21 @@
                                 <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7" /></svg>Frontend Development</li>
+                                            d="M5 13l4 4L19 7" /></svg>Computer Vision (YOLOv8)</li>
                                 <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7" /></svg>Prototyping & Simulation</li>
+                                            d="M5 13l4 4L19 7" /></svg>Transfer Learning</li>
                             </ul>
                             <ul class="space-y-2 pl-1 adaptive-text-secondary text-sm">
                                 <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7" /></svg>UI/UX Research</li>
+                                            d="M5 13l4 4L19 7" /></svg>Model Benchmarking</li>
                                 <li class="flex items-center"><svg class="h-4 w-4 mr-2 text-green-500 flex-shrink-0"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M5 13l4 4L19 7" /></svg>Business Process Design</li>
+                                            d="M5 13l4 4L19 7" /></svg>Streamlit Deployment</li>
                             </ul>
                         </div>
                     </div>
@@ -177,31 +198,35 @@
                         <h2 class="text-2xl font-bold mb-4 adaptive-text">Project Overview</h2>
                         <div class="space-y-6">
                             <div>
-                                <h3 class="font-semibold text-lg adaptive-text mb-2">Summary</h3>
+                                <h3 class="font-semibold text-lg adaptive-text mb-2">The Challenge</h3>
                                 <p class="adaptive-text-secondary leading-relaxed">
-                                    DANAin is a prototype hybrid crowdfunding platform designed to bridge the funding
-                                    gap for young entrepreneurs and SMEs in Indonesia. It directly connects innovators
-                                    with investors, creating a more accessible, transparent, and inclusive investment
-                                    ecosystem.
+                                    Early detection of corn diseases (Blight, Common Rust, Gray Leaf Spot) is crucial
+                                    for food security. Traditional manual inspection is slow and error-prone. We aimed
+                                    to build an automated, efficient diagnostic tool accessible via web browser.
                                 </p>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-lg adaptive-text mb-2">My Impact & Initiative</h3>
+                                <h3 class="font-semibold text-lg adaptive-text mb-2">The Solution & My Contribution</h3>
                                 <p class="adaptive-text-secondary leading-relaxed">
-                                    My greatest impact was taking the initiative to <strong>build a fully functional
-                                        frontend prototype independently</strong>, even before the backend API was
-                                    ready. I simulated the entire user experience, including complex workflows like
-                                    dual-role registration, investment mechanisms, and a notification system using
-                                    localStorage.
+                                    We leveraged the state-of-the-art <strong>YOLOv8s-cls</strong> architecture. I led
+                                    the experimental phase, training three model variants: Original (224px), Enhanced
+                                    Augmentation, and Modified Input (320px).
+                                </p>
+                                <p class="adaptive-text-secondary leading-relaxed mt-2">
+                                    Surprisingly, the <strong>Original configuration</strong> outperformed others with
+                                    an accuracy of <strong>96.7%</strong> and the fastest inference time (~12.7ms),
+                                    proving that bigger inputs don't always mean better results for specific datasets. I
+                                    then deployed this optimized model into a user-friendly Streamlit interface.
                                 </p>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-lg adaptive-text mb-2">What I Learned</h3>
+                                <h3 class="font-semibold text-lg adaptive-text mb-2">Key Takeaways</h3>
                                 <p class="adaptive-text-secondary leading-relaxed">
-                                    This project taught me the importance of <strong>technical independence and
-                                        end-to-end project ownership</strong>. My dual role as a developer and UX
-                                    researcher was invaluable in learning how to translate user needs into elegant
-                                    technical solutions.
+                                    This project taught me the art of <strong>model selection and trade-offs</strong>.
+                                    While higher resolution inputs usually improve detection, they drastically increased
+                                    inference time (+86%) with negligible accuracy gain in this case. I learned to
+                                    prioritize <strong>efficiency for deployment</strong> over raw theoretical
+                                    complexity.
                                 </p>
                             </div>
                         </div>
@@ -221,97 +246,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const carouselContainer = document.getElementById('carousel-wrapper');
-            const images = [
-                'assets/images/danain-1.jpeg',
-                'assets/images/danain-2.jpeg',
-                'assets/images/danain-3.jpeg',
-                'assets/images/danain-4.jpeg'
-            ];
-            const placeholders = [
-                'https://placehold.co/1200x800/0f172a/FFFFFF?text=DANAin+Dashboard',
-                'https://placehold.co/1200x800/0891b2/0f172a?text=Project+Page',
-                'https://placehold.co/1200x800/4f46e5/FFFFFF?text=Admin+View',
-                'https://placehold.co/1200x800/f59e0b/FFFFFF?text=Submission+Form'
-            ];
-
-            images.forEach((src, index) => {
-                const img = document.createElement('img');
-                img.src = src;
-                img.alt = `DANAin screenshot ${index + 1}`;
-                img.className =
-                    `absolute top-0 left-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 ease-in-out ${index === 0 ? 'opacity-100' : 'opacity-0'}`;
-                img.onerror = function () {
-                    this.onerror = null;
-                    this.src = placeholders[index];
-                };
-                carouselContainer.appendChild(img);
-            });
-
-            if (images.length > 1) {
-                const createBtn = (d) => {
-                    const btn = document.createElement('button');
-                    btn.innerHTML = d;
-                    btn.className =
-                        "absolute top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full p-2 transition-colors focus:outline-none backdrop-blur-sm";
-                    return btn;
-                };
-
-                const prevButton = createBtn(
-                    `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>`
-                );
-                prevButton.style.left = "1rem";
-
-                const nextButton = createBtn(
-                    `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>`
-                );
-                nextButton.style.right = "1rem";
-
-                carouselContainer.appendChild(prevButton);
-                carouselContainer.appendChild(nextButton);
-
-                const imageElements = carouselContainer.getElementsByTagName('img');
-                let currentIndex = 0;
-
-                function showSlide(index) {
-                    for (let i = 0; i < imageElements.length; i++) {
-                        imageElements[i].classList.remove('opacity-100');
-                        imageElements[i].classList.add('opacity-0');
-                    }
-                    imageElements[index].classList.remove('opacity-0');
-                    imageElements[index].classList.add('opacity-100');
-                }
-
-                let autoSlideInterval = setInterval(() => {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    showSlide(currentIndex);
-                }, 5000);
-
-                const resetTimer = () => {
-                    clearInterval(autoSlideInterval);
-                    autoSlideInterval = setInterval(() => {
-                        currentIndex = (currentIndex + 1) % images.length;
-                        showSlide(currentIndex);
-                    }, 5000);
-                };
-
-                prevButton.addEventListener('click', () => {
-                    resetTimer();
-                    currentIndex = (currentIndex - 1 + images.length) % images.length;
-                    showSlide(currentIndex);
-                });
-
-                nextButton.addEventListener('click', () => {
-                    resetTimer();
-                    currentIndex = (currentIndex + 1) % images.length;
-                    showSlide(currentIndex);
-                });
-            }
-        });
-    </script>
 
 </body>
 
